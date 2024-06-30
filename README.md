@@ -74,9 +74,6 @@ Contributions are welcome! Please follow these steps:
 5. Open a Pull Request.
 
 ## Contact
-For questions or support, please contact:
-- **Project Guide**: Dr. Banumathi K L (Assistant Professor, Department of Electronics and Communication Engineering, Bapuji Institute of Engineering and Technology, Davangere)
-
 Project Associates:
 - S Suhas
 - Shreyas P
