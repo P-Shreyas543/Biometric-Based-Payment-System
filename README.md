@@ -80,7 +80,7 @@ This project is implemented on the ESP32 microcontroller, utilizing the Adafruit
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
 
   <div style="flex: 1 1 200px; max-width: 200px;">
-    <img src="https://github.com/user-attachments/assets/f63c48c8-71da-4a93-9a49-83f7c1d39c6b" alt="Final setup" style="width: 100%; height: auto;">
+    < ![Ready_to_accept_fingerprint](https://github.com/user-attachments/assets/2ca4d2f1-c03e-4419-8fe0-2b7cb332acfa) alt="Final setup" style="width: 100%; height: auto;">
     <p style="text-align: center;">Image 1 Description</p>
   </div>
 
