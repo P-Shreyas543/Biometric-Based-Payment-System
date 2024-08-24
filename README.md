@@ -86,6 +86,15 @@ This project is implemented on the ESP32 microcontroller, utilizing the Adafruit
   <img src="https://github.com/user-attachments/assets/9cf227ec-89d4-4b2c-a7d9-8323013086e3" alt="Image 3" width="300"/>
 </p>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/44e26401-c8c0-403e-b905-8ae8128954a9" alt="Login Page" width="300"/>
+  <img src="https://github.com/user-attachments/assets/3a30480b-b67d-42b7-80e5-b14fdfb2a980" alt="Admin Dashboard" width="300"/>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fa6092bc-2050-4ec9-9533-132fbc907339" alt="User Page" width="300"/>
+</p>
+
+
 ## Contributing
 
 Feel free to contribute to this project by submitting issues, suggestions, or improvements via GitHub.
