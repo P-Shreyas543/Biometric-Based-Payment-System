@@ -77,10 +77,23 @@ This project is implemented on the ESP32 microcontroller, utilizing the Adafruit
 
 ## Project Images
 
-![IMG20240525101611](https://github.com/user-attachments/assets/d4783c38-d77e-45be-baac-9b118773b3f3)
-![IMG20240525101553](https://github.com/user-attachments/assets/dbd4654a-9d40-439e-88f2-c98baac5379c)
-![IMG20240525101605](https://github.com/user-attachments/assets/9cf227ec-89d4-4b2c-a7d9-8323013086e3)
-![IMG20240525101543](https://github.com/user-attachments/assets/89a0f944-5309-4a65-a491-6c0d29dfdac4)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="image-grid">
+        <img src="https://github.com/user-attachments/assets/d4783c38-d77e-45be-baac-9b118773b3f3" alt="Image 1">
+        <img src="https://github.com/user-attachments/assets/dbd4654a-9d40-439e-88f2-c98baac5379c" alt="Image 2">
+        <img src="https://github.com/user-attachments/assets/9cf227ec-89d4-4b2c-a7d9-8323013086e3" alt="Image 3">
+        <img src="https://github.com/user-attachments/assets/89a0f944-5309-4a65-a491-6c0d29dfdac4" alt="Image 4">
+    </div>
+</body>
+</html>
 
 ## Contributing
 
