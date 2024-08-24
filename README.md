@@ -31,7 +31,9 @@ This project is implemented on the ESP32 microcontroller, utilizing the Adafruit
 1. **Hardware Setup**:
    - Connect the Adafruit Fingerprint sensor to the ESP32 using UART2 (TX to GPIO 12, RX to GPIO 1).
    - Connect the OLED display to the I2C pins (SDA to GPIO 17, SCL to GPIO 18).
-   - Connect the 4x4 keypad to the specified GPIO pins.
+   - Connect the Keypad:
+      - Row Pins: Connect to GPIO pins 14, 13, 12, 11
+      - Column Pins: Connect to GPIO pins 10, 9, 46, 3
 
 2. **Software Setup**:
    - Install the Arduino IDE if you haven't already.
@@ -50,13 +52,10 @@ This project is implemented on the ESP32 microcontroller, utilizing the Adafruit
 
 1. **Setup WiFi**:
    - Ensure your ESP32 is connected to a WiFi network. Modify the `ssid` and `password` variables in the code if necessary.
-
 2. **Add Users**:
    - Enroll fingerprints and set up user profiles using the fingerprint sensor and keypad interface.
-
 3. **Perform Transactions**:
    - Use the keypad to initiate transactions and the OLED display to view transaction details and status.
-
 4. **Access Web Server**:
    - Connect to the ESP32’s IP address via a web browser to manage user accounts and view transaction logs.
 
@@ -67,10 +66,19 @@ This project is implemented on the ESP32 microcontroller, utilizing the Adafruit
 - **Display Management**: Handles visual feedback through the Adafruit SSD1306 OLED display.
 - **Web Server**: An asynchronous web server for managing users and transactions.
 - **Password Hashing**: Implements SHA-256 hashing for secure password storage.
+- **`hashPassword(const char *password)`**: Hashes passwords using SHA256 with a fixed salt.
+- **`setup()`**: Initializes the hardware components, sets up the WiFi, and starts the web server.
+- **`loop()`**: Handles fingerprint authentication and user interactions.
 
-## License
+## Troubleshooting
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- **Fingerprint Sensor Not Responding**: Check connections and ensure the sensor is properly initialized.
+- **OLED Display Blank**: Verify connections and ensure the display is correctly configured.
+- **Keypad Not Working**: Ensure proper wiring and verify pin assignments.
+
+## Contributing
+
+Feel free to contribute to this project by submitting issues, suggestions, or improvements via GitHub.
 
 ## Acknowledgments
 
@@ -78,3 +86,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - The Arduino community for the open-source libraries and support.
 
 For further assistance or questions, please refer to the documentation or open an issue in the repository.
+For any additional questions or support, please contact [Shreyas P](mailto:shreyasp182002@gmail.com).
