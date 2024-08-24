@@ -75,6 +75,33 @@ This project is implemented on the ESP32 microcontroller, utilizing the Adafruit
 - **OLED Display Blank**: Verify connections and ensure the display is correctly configured.
 - **Keypad Not Working**: Ensure proper wiring and verify pin assignments.
 
+# Project Images
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+
+  <div style="flex: 1 1 200px; max-width: 200px;">
+    <img src="https://github.com/user-attachments/assets/f63c48c8-71da-4a93-9a49-83f7c1d39c6b" alt="Final setup" style="width: 100%; height: auto;">
+    <p style="text-align: center;">Image 1 Description</p>
+  </div>
+
+  <div style="flex: 1 1 200px; max-width: 200px;">
+    <img src="https://example.com/image2.jpg" alt="Image 2" style="width: 100%; height: auto;">
+    <p style="text-align: center;">Image 2 Description</p>
+  </div>
+
+  <div style="flex: 1 1 200px; max-width: 200px;">
+    <img src="https://example.com/image3.jpg" alt="Image 3" style="width: 100%; height: auto;">
+    <p style="text-align: center;">Image 3 Description</p>
+  </div>
+
+  <div style="flex: 1 1 200px; max-width: 200px;">
+    <img src="https://example.com/image4.jpg" alt="Image 4" style="width: 100%; height: auto;">
+    <p style="text-align: center;">Image 4 Description</p>
+  </div>
+
+</div>
+
+
 ## Contributing
 
 Feel free to contribute to this project by submitting issues, suggestions, or improvements via GitHub.
