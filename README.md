@@ -1,81 +1,78 @@
-# Biometric Based Payment System
+# Biometric-Based Payment System
 
-## Project Overview
-The Biometric Based Payment System is designed to provide a secure and convenient payment method using biometric authentication. The system employs a fingerprint sensor for user identification, a 4x4 keypad for versatile input, and a 1.3” OLED display for clear feedback. An ESP32 microcontroller ensures secure handling of sensitive information with SHA-256 encryption. The system is supported by a centralized MySQL database and a web interface for managing payment history.
+## Overview
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Hardware Requirements](#hardware-requirements)
-- [Software Requirements](#software-requirements)
-- [Contributing](#contributing)
-- [Contact](#contact)
+The Biometric-Based Payment System is an advanced security and payment solution that leverages fingerprint recognition to facilitate secure transactions. This system integrates various components including a fingerprint sensor, a keypad for additional user inputs, an OLED display for visual feedback, and WiFi connectivity for network communication.
+
+This project is implemented on the ESP32 microcontroller, utilizing the Adafruit Fingerprint sensor library for fingerprint recognition, and the Adafruit SSD1306 library for driving the OLED display. The system also features a simple web server to manage user accounts and perform transactions.
 
 ## Features
-- Secure biometric authentication using fingerprint sensor
-- Robust SHA-256 encryption for data protection
-- Real-time transaction feedback via OLED display
-- Versatile input options with a 4x4 keypad
-- Centralized MySQL database for transaction data
-- Web interface for managing payment history
+
+- **Fingerprint Authentication**: Securely authenticate users via fingerprint recognition.
+- **User Management**: Manage user profiles including ID, name, balance, and role (admin/user).
+- **Transaction Handling**: Perform balance checks and transactions securely.
+- **OLED Display**: Provides visual feedback to users, including system status and instructions.
+- **Keypad Interface**: Allows users to enter data and interact with the system.
+- **WiFi Connectivity**: Connect to a network for online transactions and updates.
+- **Password Hashing**: Securely hash user passwords using SHA-256 encryption with a fixed salt.
+
+## Components
+
+- **ESP32 Microcontroller**: Main controller for the system.
+- **Adafruit Fingerprint Sensor**: Captures and recognizes fingerprints.
+- **Adafruit SSD1306 OLED Display**: Displays user interface and system messages.
+- **4x4 Keypad**: Provides input for user interactions.
+- **WiFi Module**: For network connectivity and online features.
 
 ## Installation
 
-### Hardware Setup
-1. **ESP32 Microcontroller**: Connect the ESP32 microcontroller to your system.
-2. **R307 Fingerprint Sensor**: Interface the R307 fingerprint sensor with the ESP32.
-3. **1.3” OLED Display**: Connect the OLED display to the ESP32.
-4. **4x4 Matrix Keypad**: Interface the keypad with the ESP32.
-5. **Power Supply**: Ensure the system is powered appropriately, using an 18650 Li-ion battery or an alternative power source.
+1. **Hardware Setup**:
+   - Connect the Adafruit Fingerprint sensor to the ESP32 using UART2 (TX to GPIO 12, RX to GPIO 1).
+   - Connect the OLED display to the I2C pins (SDA to GPIO 17, SCL to GPIO 18).
+   - Connect the 4x4 keypad to the specified GPIO pins.
 
-### Software Setup
-1. **Arduino IDE**: Download and install the Arduino IDE from [Arduino's official website](https://www.arduino.cc/en/Main/Software).
-2. **ESP32 Board Configuration**: Add the ESP32 board configuration to the Arduino IDE by following the [instructions here](https://github.com/espressif/arduino-esp32).
-3. **Required Libraries**:
-   - Adafruit GFX Library
-   - Adafruit SSD1306
-   - ArduinoJson
-   - Fingerprint Sensor Library for R307
-4. **Server Setup**:
-   - Install Apache server and MySQL database.
-   - Configure the database with the necessary tables for transaction data.
-   - Deploy the web interface for managing payment history.
+2. **Software Setup**:
+   - Install the Arduino IDE if you haven't already.
+   - Add the ESP32 board to the Arduino IDE.
+   - Install the required libraries:
+     - `Adafruit Fingerprint Sensor Library`
+     - `Adafruit SSD1306`
+     - `Adafruit GFX`
+     - `Keypad`
+     - `AsyncTCP`
+     - `ESPAsyncWebServer`
+   - Clone or download the project repository to your local machine.
+   - Open the project in the Arduino IDE and upload the code to the ESP32.
 
 ## Usage
-1. **Enrolment Mode**:
-   - Register users' fingerprints by enrolling their biometric data into the system.
-2. **Payment Mode**:
-   - Users can access their wallets using their fingerprints.
-   - Available options include checking balance, adding money, and making payments.
-   - The system confirms transactions via the OLED display.
 
-## Hardware Requirements
-- ESP32 Microcontroller
-- R307 Fingerprint Sensor
-- 1.3” OLED Display
-- 4x4 Matrix Keypad
-- Power Supply (18650 Li-ion Battery or equivalent)
+1. **Setup WiFi**:
+   - Ensure your ESP32 is connected to a WiFi network. Modify the `ssid` and `password` variables in the code if necessary.
 
-## Software Requirements
-- Arduino IDE
-- Apache Server
-- MySQL Database
-- PHP
-- HTML/CSS/JavaScript for web interface
+2. **Add Users**:
+   - Enroll fingerprints and set up user profiles using the fingerprint sensor and keypad interface.
 
-## Contributing
-Contributions are welcome! Please follow these steps:
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request.
+3. **Perform Transactions**:
+   - Use the keypad to initiate transactions and the OLED display to view transaction details and status.
 
-## Contact
-Project Associates:
-- S Suhas
-- Shreyas P
-- Vyshnavi H K
-- Chitra A
+4. **Access Web Server**:
+   - Connect to the ESP32’s IP address via a web browser to manage user accounts and view transaction logs.
+
+## Code Description
+
+- **User Management**: Contains a `User` struct for managing user data and a global array for storing user profiles.
+- **Fingerprint Authentication**: Uses the Adafruit Fingerprint library to capture and verify fingerprints.
+- **Display Management**: Handles visual feedback through the Adafruit SSD1306 OLED display.
+- **Web Server**: An asynchronous web server for managing users and transactions.
+- **Password Hashing**: Implements SHA-256 hashing for secure password storage.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Adafruit for providing the fingerprint sensor and OLED display libraries.
+- The Arduino community for the open-source libraries and support.
+
+For further assistance or questions, please refer to the documentation or open an issue in the repository.
