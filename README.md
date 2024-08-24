@@ -18,6 +18,8 @@ This project is implemented on the ESP32 microcontroller, utilizing the Adafruit
 
 ## Components
 
+![image](https://github.com/user-attachments/assets/aeb31364-fa35-4358-80d1-f98ecdd799ce)
+
 - **ESP32 Microcontroller**: Main controller for the system.
 - **Adafruit Fingerprint Sensor**: Captures and recognizes fingerprints.
 - **Adafruit SSD1306 OLED Display**: Displays user interface and system messages.
