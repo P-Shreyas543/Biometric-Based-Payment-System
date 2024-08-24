@@ -88,5 +88,4 @@ Feel free to contribute to this project by submitting issues, suggestions, or im
 - Adafruit for providing the fingerprint sensor and OLED display libraries.
 - The Arduino community for the open-source libraries and support.
 
-For further assistance or questions, please refer to the documentation or open an issue in the repository.
 For any additional questions or support, please contact [Shreyas P](mailto:shreyasp182002@gmail.com).
