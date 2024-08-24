@@ -24,7 +24,6 @@ This project is implemented on the ESP32 microcontroller, utilizing the Adafruit
 - **Adafruit Fingerprint Sensor**: Captures and recognizes fingerprints.
 - **Adafruit SSD1306 OLED Display**: Displays user interface and system messages.
 - **4x4 Keypad**: Provides input for user interactions.
-- **WiFi Module**: For network connectivity and online features.
 
 ## Installation
 
