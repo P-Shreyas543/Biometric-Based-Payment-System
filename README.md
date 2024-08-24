@@ -1,4 +1,4 @@
-![fingerprint_verified](https://github.com/user-attachments/assets/4ee905fb-d8c4-4430-9e39-9707d9e34972)![Fingerprint_unregistered](https://github.com/user-attachments/assets/f7910a4d-db85-4ef6-a76e-e28316888d52)# Biometric-Based Payment System
+# Biometric-Based Payment System
 
 ## Overview
 
@@ -75,9 +75,9 @@ This project is implemented on the ESP32 microcontroller, utilizing the Adafruit
 - **OLED Display Blank**: Verify connections and ensure the display is correctly configured.
 - **Keypad Not Working**: Ensure proper wiring and verify pin assignments.
 
-# Project Images
+## Project Images
 
-![Ready_to_accept_fingerprint](https://github.com/user-attachments/assets/437eb760-a646-400b-97ca-bab002be7018)
+
 
 ## Contributing
 
