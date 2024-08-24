@@ -1,4 +1,4 @@
-# Biometric-Based Payment System
+![fingerprint_verified](https://github.com/user-attachments/assets/4ee905fb-d8c4-4430-9e39-9707d9e34972)![Fingerprint_unregistered](https://github.com/user-attachments/assets/f7910a4d-db85-4ef6-a76e-e28316888d52)# Biometric-Based Payment System
 
 ## Overview
 
@@ -77,30 +77,7 @@ This project is implemented on the ESP32 microcontroller, utilizing the Adafruit
 
 # Project Images
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-
-  <div style="flex: 1 1 200px; max-width: 200px;">
-    < ![Ready_to_accept_fingerprint](https://github.com/user-attachments/assets/2ca4d2f1-c03e-4419-8fe0-2b7cb332acfa) alt="Final setup" style="width: 100%; height: auto;">
-    <p style="text-align: center;">Image 1 Description</p>
-  </div>
-
-  <div style="flex: 1 1 200px; max-width: 200px;">
-    <img src="https://example.com/image2.jpg" alt="Image 2" style="width: 100%; height: auto;">
-    <p style="text-align: center;">Image 2 Description</p>
-  </div>
-
-  <div style="flex: 1 1 200px; max-width: 200px;">
-    <img src="https://example.com/image3.jpg" alt="Image 3" style="width: 100%; height: auto;">
-    <p style="text-align: center;">Image 3 Description</p>
-  </div>
-
-  <div style="flex: 1 1 200px; max-width: 200px;">
-    <img src="https://example.com/image4.jpg" alt="Image 4" style="width: 100%; height: auto;">
-    <p style="text-align: center;">Image 4 Description</p>
-  </div>
-
-</div>
-
+![Ready_to_accept_fingerprint](https://github.com/user-attachments/assets/437eb760-a646-400b-97ca-bab002be7018)
 
 ## Contributing
 
